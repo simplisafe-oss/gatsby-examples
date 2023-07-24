@@ -26,8 +26,8 @@
     "@typescript-eslint/eslint-plugin": "5.62.0",
     "@typescript-eslint/parser": "5.62.0",
     "@vitejs/plugin-react": "4.0.3",
-    "@vitest/coverage-c8": "0.31.4",
-    "@vitest/ui": "0.31.4",
+    "@vitest/coverage-c8": "~0.32.0",
+    "@vitest/ui": "~0.32.0",
     "babel-jest": "^29.4.1",
     "babel-plugin-module-resolver": "4.1.0",
     "babel-preset-gatsby": "2.2.0",
@@ -52,10 +52,10 @@
     "vite": "4.4.7",
     "vite-plugin-eslint": "^1.8.1",
     "vite-tsconfig-paths": "4.2.0",
-    "vitest": "0.31.4"
+    "vitest": "~0.32.0",
+    "webpack": "^5.88.2"
   },
   "dependencies": {
-    "@nx/vite": "16.5.5",
     "gatsby": "4.22.0",
     "gatsby-plugin-image": "2.22.0",
     "gatsby-plugin-manifest": "4.22.0",

@@ -1,0 +1,11 @@
+{
+  "presets": [
+    [
+      "@simplisafe-oss/nx-gatsby/babel",
+      {
+        "reactRuntime": "automatic"
+      }
+    ]
+  ],
+  "plugins": []
+}

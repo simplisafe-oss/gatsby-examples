@@ -4,3 +4,7 @@
 /example-app/node_modules
 /example-app/public
 /example-app/.cache
+
+/apps/example-app/node_modules
+/apps/example-app/public
+/apps/example-app/.cache

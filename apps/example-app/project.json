@@ -1,0 +1,54 @@
+{
+  "name": "example-app",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/example-app/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@simplisafe-oss/nx-gatsby:build",
+      "options": {
+        "outputPath": "apps/example-app/public",
+        "uglify": true,
+        "color": true,
+        "profile": false
+      },
+      "configurations": {
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@simplisafe-oss/nx-gatsby:server",
+      "options": {
+        "buildTarget": "example-app:build"
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "example-app:build:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/example-app/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nx/vite:test",
+      "outputs": ["coverage/apps/example-app"],
+      "options": {
+        "passWithNoTests": true,
+        "reportsDirectory": "../../coverage/apps/example-app"
+      }
+    }
+  },
+  "tags": [],
+  "generators": {
+    "@simplisafe-oss/nx-gatsby": {
+      "application": {
+        "style": "css"
+      }
+    }
+  }
+}
