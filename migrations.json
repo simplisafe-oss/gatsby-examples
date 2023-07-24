@@ -1,0 +1,68 @@
+{
+  "migrations": [
+    {
+      "cli": "nx",
+      "version": "16.0.0-beta.1",
+      "description": "Replace @nx/js with @nx/js",
+      "implementation": "./src/migrations/update-16-0-0-add-nx-packages/update-16-0-0-add-nx-packages",
+      "package": "@nx/js",
+      "name": "update-16-0-0-add-nx-packages"
+    },
+    {
+      "cli": "nx",
+      "version": "16.0.0-beta.1",
+      "description": "Replace @nx/linter with @nx/linter",
+      "implementation": "./src/migrations/update-16-0-0-add-nx-packages/update-16-0-0-add-nx-packages",
+      "package": "@nx/linter",
+      "name": "update-16-0-0-add-nx-packages"
+    },
+    {
+      "cli": "nx",
+      "version": "16.0.0-beta.1",
+      "description": "Replace @nx/vite with @nx/vite",
+      "implementation": "./src/migrations/update-16-0-0-add-nx-packages/update-16-0-0-add-nx-packages",
+      "package": "@nx/vite",
+      "name": "update-16-0-0-add-nx-packages"
+    },
+    {
+      "version": "16.4.1-beta.0",
+      "description": "Changes the testFile config in the vite:test exectutor from a string to an array of strings",
+      "cli": "nx",
+      "implementation": "./src/migrations/update-16-4-1-update-test-file-config/update-16-4-1-test-file-config",
+      "package": "@nx/vite",
+      "name": "update-16-4-1-test-file-config"
+    },
+    {
+      "cli": "nx",
+      "version": "16.0.0-beta.1",
+      "description": "Replace @nx/eslint-plugin with @nx/eslint-plugin",
+      "implementation": "./src/migrations/update-16-0-0-add-nx-packages/update-16-0-0-add-nx-packages",
+      "package": "@nx/eslint-plugin",
+      "name": "update-16-0-0-add-nx-packages"
+    },
+    {
+      "cli": "nx",
+      "version": "16.0.0-beta.1",
+      "description": "Replace @nx/react with @nx/react",
+      "implementation": "./src/migrations/update-16-0-0-add-nx-packages/update-16-0-0-add-nx-packages",
+      "package": "@nx/react",
+      "name": "update-16-0-0-add-nx-packages"
+    },
+    {
+      "cli": "nx",
+      "version": "16.2.0-beta.0",
+      "description": "Remove react-test-renderer from package.json",
+      "implementation": "./src/migrations/update-16-2-0-remove-package/update-16-2-0-remove-package",
+      "package": "@nx/react",
+      "name": "update-16-2-0-remove-package"
+    },
+    {
+      "cli": "nx",
+      "version": "16.3.0-beta.2",
+      "description": "Remove @types/react-router-dom from package.json",
+      "implementation": "./src/migrations/update-16-3-0/remove-types-react-router-dom-package",
+      "package": "@nx/react",
+      "name": "remove-types-react-router-dom"
+    }
+  ]
+}

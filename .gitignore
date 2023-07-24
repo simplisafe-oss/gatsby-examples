@@ -1,3 +1,6 @@
 node_modules
 dist
 public
+/example-app/node_modules
+/example-app/public
+/example-app/.cache
